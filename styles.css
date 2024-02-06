@@ -1,0 +1,331 @@
+/*Author: Viran Fernando
+  Semester: 2023 Third Semester(Summer School)
+*/
+
+
+/*GLOBAL SETTINGS
+----------------------------------------
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,700;1,300;1,700&display=swap') ;
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300&display=swap') ;
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+#wrapper {
+	position: relative;
+	width: 1200px; 
+	margin: 0 auto;
+}
+
+#wrapper {
+    background-color: #EEEEEE;
+}
+
+body h2 {
+    font-size: 1.7em;
+}
+
+section p{
+    font-size: 1.1em;
+    margin-right: 50px;
+    margin-left: 50px;
+}
+
+
+/*HEADER
+  This section is common to all pages in the site.
+----------------------------------------
+*/
+
+header img {
+    position: relative;
+    top: 17px;
+    left: 10px;
+    z-index: 2;
+    border: 1px solid #FFFFFF;
+    border-radius: 55px;
+}
+
+#title {
+    visibility: hidden;
+}
+
+h1 {
+    margin: 0px;
+    height: 0px;
+    text-align: center;
+    visibility: hidden
+}
+
+
+/*NAVIGATION
+  This section is common to all pages in the site.
+----------------------------------------
+*/
+nav {
+	background-color: #302E2E;
+	position: absolute;
+	top: 0px; left: 0px;
+	width: 100%; /* = 1200px */
+	padding-top: 20px;
+    padding-bottom: 10px;
+    border-bottom: solid 1px;
+    border-bottom-color: white;
+}
+
+nav a {
+	color: black; /* white */
+    background-color: white;
+	text-decoration: none;
+	padding: 45px 20px 12px 20px;
+    border-radius: 20px;
+    font-family: 'Times New Roman', sans-serif;
+    bottom: 10px;
+}
+
+nav img {
+    padding-top: 2px;
+    background-color: white;
+    border-radius: 15px;
+}
+
+nav a:hover {
+    font-size: 150%;
+}
+
+nav a:visited {
+	color: black;
+}
+
+nav ul {
+	padding-left: 230px;
+	list-style: none;
+}
+
+nav li {
+	display: inline;
+    padding: 10px 15px 10px 10px;
+}
+
+nav span {
+    padding: 10px 20px 15px 20px;
+	background-color: #356d81;
+    color: #ffffff;
+}
+
+
+
+
+             /*/========== HOME/LANDING PAGE==========/*/
+
+
+/*INTRODUCTION SECTION
+  This section is the first section in the landing page.
+----------------------------------------
+*/
+#intro h2 {
+    margin-top: 50px;
+    text-align: center;
+}
+
+#intro section {
+    display: flex;
+    margin: auto;
+    width: 50%;
+
+}
+
+#intro section p {
+    font-size: 1.2em;
+    text-align: center;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+
+/*HOME PAGE CONSOLE SECTIONS
+  This section is the second section in the landing page., right below the introductory paragraph.
+---------------------------------------
+*/
+
+#psconsole, #xboxconsole, #nintendoconsole, #steamconsole{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 25px;
+    padding-top: 25px;
+}
+
+#psconsole img,#xboxconsole img, #nintendoconsole img, #steamconsole img {
+    align-self: center;
+}
+
+#psconsole section, #xboxconsole section, #nintendoconsole section, #steamconsole section {
+    display: flex; 
+    margin: 30px;
+}
+
+#psconsole p, #xboxconsole p, #nintendoconsole p, #steamconsole p {
+    margin-right: 0px;
+}
+
+#psconsole a, #xboxconsole a, #nintendoconsole a, #steamconsole a {
+    color: #FFFFFF;
+    display: block;
+    margin: auto;
+    text-align: center;
+	text-decoration:  none;
+    background-color: #3498DB;
+	font-size: 1.2em;
+	border: 1px solid #17202A;
+	padding: 5px 5px;
+    white-space: nowrap;
+    justify-content: center;
+    height: 100%;
+}
+
+
+
+
+            /*/==============WEB PAGES==============/*/
+
+
+/*PAGES BANNER SECTION
+This section is the banner section in the web pages.
+----------------------------------------
+*/
+#banner {
+    text-align: center;
+}
+
+#banner img {
+    display: block;
+    margin: auto;
+}
+
+
+/*PAGES CONSOLES SECTIONS
+  This section is the first section in the web pages (below the banner).
+----------------------------------------
+*/
+#consoles  {
+    color: white;
+    text-align: center;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: #2D3232;
+}
+
+#desc {
+    text-align: justify;
+    display: flex;
+}
+
+#consoles img {
+    padding: 40px 33px 0px 40px;
+}
+
+
+
+/*PAGES GAMES SECTIONS
+  This section is the second section in the web pages.
+----------------------------------------
+*/
+#games {
+    color: #FFFFFF;
+    background-color: #154360;
+    border: 5px solid #AED6F1;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-right: 40px;
+    margin-left: 40px;
+}
+
+#games section{
+    text-align: center;
+}
+
+#games img {
+    padding: 10px;
+}
+
+#games a {
+    text-decoration: none;
+    position: relative;
+    padding: 5px;
+    bottom: 30px;
+    color: black;
+    border: 1px solid #FFFFFF;
+    background-color: #08C4CD;
+}
+
+
+/*PAGES SERVICES SECTION
+  This section is the third section in the web pages.
+----------------------------------------
+*/
+
+#services {
+    background-color: #2D3232;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    text-align: center
+}
+
+#services p {
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+#services img {
+   padding: 30px; 
+}
+
+#paragraphs {
+    display: flex
+}
+
+#services a {
+    color: skyblue;
+}
+
+#services a:visited {
+    color: #FFFFFF;
+}
+
+
+/*PAGES SPECS SECTION
+  This section is the fourth and final section in the web pages.
+----------------------------------------
+*/
+#specs {
+    margin: 40px;
+    color: white;
+    border: 5px solid #AED6F1;
+    text-align: center;
+    background-color: #154360;
+    margin-left: 250px;
+    margin-right: 250px;
+}
+
+
+/*FOOTER
+  This section is common to all pages in the site.
+----------------------------------------
+*/
+footer {
+    color: white;
+    text-align: center;
+    background-color: #302E2E;
+}
+
+footer a {
+    color: white;
+}
